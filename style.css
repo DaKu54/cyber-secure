@@ -1,51 +1,109 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f6f8fa;
-    color: #222;
-  }
-  
-  header {
-    background-color: #0c2340;
-    color: white;
-    padding: 2em;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #1b1f23;
-    padding: 0.5em;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
+/* Grundstil */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #222;
+  }
+  
+  /* Layout */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0a192f;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #a8b2d1;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #112240;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5em 0;
+  }
+  
   nav li {
-    display: inline;
     margin: 0 1em;
   }
   
   nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
   }
   
+  nav a:hover {
+    color: #64ffda;
+  }
+  
+  /* Main */
   main {
-    padding: 2em;
+    padding: 2em 0;
   }
   
-  section {
-    margin-bottom: 2em;
+  h2 {
+    margin-bottom: 0.5em;
+    color: #0a192f;
   }
   
+  h3 {
+    margin-bottom: 0.3em;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 1em;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
   footer {
+    background-color: #0a192f;
+    color: #fff;
     text-align: center;
-    padding: 1em;
-    background-color: #1b1f23;
-    color: white;
+    padding: 1.5em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
   }
   
